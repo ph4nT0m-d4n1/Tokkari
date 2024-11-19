@@ -1,4 +1,0 @@
-repository "Tokkari@dannymallya@cloud"
-  path "/"
-    br "/main"
-    co "/main"
