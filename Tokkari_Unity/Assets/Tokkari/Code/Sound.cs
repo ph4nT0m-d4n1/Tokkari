@@ -13,6 +13,8 @@ public class Sound : MonoBehaviour
     Vector3 s;
     float sy;
 
+    private float upwardForce = 100f;
+
     private void Start()
     {
         audioSource = GetComponent<AudioSource>();
