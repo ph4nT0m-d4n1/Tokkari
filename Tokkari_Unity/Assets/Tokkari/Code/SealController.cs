@@ -16,6 +16,8 @@ public class SealController : MonoBehaviour
 
     public Slider micSlider; //for mic feedback
 
+    public PauseMenu PM; //for game pausing
+
     void Start()
     {
         // microphone setup
@@ -33,10 +35,18 @@ public class SealController : MonoBehaviour
         sealRigidbody = GetComponent<Rigidbody>();
     }
 
-    void Update()
-    {
-        loudness = GetLoudnessFromMic();
-        UpdateMicFeedbackUI();
+   void Update()
+   {
+        if (!PM.isPaused)
+        {
+            loudness = GetLoudnessFromMic();
+            UpdateMicFeedbackUI();
+        }
+        else
+        {
+            loudness = 0;
+            UpdateMicFeedbackUI();
+        }
     }
 
     void FixedUpdate()
