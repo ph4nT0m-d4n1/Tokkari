@@ -1,12 +1,9 @@
 using UnityEngine;
 using UnityEngine.UI;
-
-[RequireComponent(typeof(Rigidbody))]
 public class SealController : MonoBehaviour
 {
     private AudioClip micClip;
-    private string device;
-    public float micSensitivity = 100.0f;
+    public float micSensitivity = 50.0f;
     public float loudness = 1.0f;
     
     public float jumpForce = 5.0f;
@@ -23,8 +20,7 @@ public class SealController : MonoBehaviour
         // microphone setup
         if (Microphone.devices.Length > 0)
         {
-            device = Microphone.devices[0];
-            micClip = Microphone.Start(device, true, 10, 44100);
+            micClip = Microphone.Start(Microphone.devices[0], true, 10, 44100);
         }
         else
         {
@@ -58,24 +54,26 @@ public class SealController : MonoBehaviour
     {
         int sampleSize = 128;
         float[] data = new float[sampleSize];
-        int micPosition = Microphone.GetPosition(device) - sampleSize + 1;
+        int micPosition = Microphone.GetPosition(Microphone.devices[0]) - sampleSize + 1;
         if (micPosition < 0) return 0;
         micClip.GetData(data, micPosition);
 
-        float sum = 0;
+        float rms = 0;
         for (int i = 0; i < sampleSize; i++)
         {
-            sum += data[i] * data[i];
+            rms += data[i] * data[i];
         }
 
-        return Mathf.Sqrt(sum / sampleSize) * micSensitivity;
+        return Mathf.Sqrt(rms / sampleSize) * micSensitivity;
     }
 
     void ApplySealMovement()
     {
         float normalizedLoudness = Mathf.Clamp01(loudness / maxLoudness);
         Vector3 upwardForce = new Vector3(0, normalizedLoudness * jumpForce, 0);
-        sealRigidbody.AddForce(upwardForce, ForceMode.Acceleration);
+        
+        Debug.Log(normalizedLoudness);
+        sealRigidbody.AddForce(upwardForce, ForceMode.Force);
     }
 
     void UpdateMicFeedbackUI()
