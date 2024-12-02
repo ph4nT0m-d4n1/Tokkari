@@ -1,6 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
-public class SealController : MonoBehaviour
+public class SealController3D : MonoBehaviour
 {
     private AudioClip micClip;
     public float micSensitivity = 50.0f;
