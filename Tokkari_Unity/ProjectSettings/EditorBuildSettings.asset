@@ -6,12 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Tokkari/Scenes/Menu_Test.unity
+    path: Assets/Tokkari/Scenes/Menu_Scene.unity
     guid: a701efbd998d04deeae61fdfaf01eb46
   - enabled: 1
-    path: Assets/Tokkari/Scenes/2D_Test.unity
+    path: Assets/Tokkari/Scenes/Game_Scene.unity
     guid: 2ed08a85e8ce742a89a40452d16b03d2
-  - enabled: 1
-    path: Assets/Tokkari/Scenes/3D_Test.unity
-    guid: 9fc0d4010bbf28b4594072e72b8655ab
   m_configObjects: {}
