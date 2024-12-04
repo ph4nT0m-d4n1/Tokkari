@@ -395,3 +395,248 @@ Start importing Assets/Tokkari/Prefabs/Tokkari Seal.fbx using Guid(a75036a9ca8a9
  -> (artifact id: 'f02e6d93b91c444da5d11497a508b969') in 0.075750 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 9
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+Thread 0x17d6ef000 may have been prematurely finalized
+- Loaded All Assemblies, in  0.263 seconds
+Native extension for Android target not found
+Native extension for OSXStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Diagnostic switches are active and may impact performance or degrade your user experience. Switches can be configured through the Diagnostics section in the Preferences window.
+	GlobalIlluminationLogging: False
+	PreventClearGICacheOnKatana: False
+	UndoRetainStack: False
+	UndoSerializeStack: False
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.736 seconds
+Domain Reload Profiling: 1000ms
+	BeginReloadAssembly (93ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (3ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (37ms)
+	RebuildCommonClasses (22ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (13ms)
+	LoadAllAssembliesAndSetupDomain (127ms)
+		LoadAssemblies (147ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (10ms)
+			TypeCache.Refresh (6ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (4ms)
+	FinalizeReload (736ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (297ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (7ms)
+			SetLoadedEditorAssemblies (2ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (28ms)
+			ProcessInitializeOnLoadAttributes (250ms)
+			ProcessInitializeOnLoadMethodAttributes (10ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (2ms)
+Refreshing native plugins compatible for Editor in 0.83 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3270 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 14 unused Assets / (28.5 KB). Loaded Objects now: 3823.
+Memory consumption went from 165.7 MB to 165.6 MB.
+Total: 2.537625 ms (FindLiveObjects: 0.104084 ms CreateObjectMapping: 0.046333 ms MarkObjects: 2.357750 ms  DeleteObjects: 0.029000 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/SealController3D.cs: 939eeb71381e52676662931afd6be572 -> ba7a9eeb63a191e889acbd5186052fb1
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+Thread 0x17d6ef000 may have been prematurely finalized
+- Loaded All Assemblies, in  0.234 seconds
+Native extension for Android target not found
+Native extension for OSXStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Diagnostic switches are active and may impact performance or degrade your user experience. Switches can be configured through the Diagnostics section in the Preferences window.
+	GlobalIlluminationLogging: False
+	PreventClearGICacheOnKatana: False
+	UndoRetainStack: False
+	UndoSerializeStack: False
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.764 seconds
+Domain Reload Profiling: 998ms
+	BeginReloadAssembly (75ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (2ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (24ms)
+	RebuildCommonClasses (23ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (12ms)
+	LoadAllAssembliesAndSetupDomain (117ms)
+		LoadAssemblies (134ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (11ms)
+			TypeCache.Refresh (6ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (3ms)
+	FinalizeReload (764ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (310ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (7ms)
+			SetLoadedEditorAssemblies (2ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (28ms)
+			ProcessInitializeOnLoadAttributes (262ms)
+			ProcessInitializeOnLoadMethodAttributes (10ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (2ms)
+Refreshing native plugins compatible for Editor in 1.33 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3271 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 14 unused Assets / (28.5 KB). Loaded Objects now: 3826.
+Memory consumption went from 174.7 MB to 174.6 MB.
+Total: 2.387250 ms (FindLiveObjects: 0.114917 ms CreateObjectMapping: 0.057250 ms MarkObjects: 2.184792 ms  DeleteObjects: 0.030125 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/SealController3D.cs: 939eeb71381e52676662931afd6be572 -> ba7a9eeb63a191e889acbd5186052fb1
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 1616.468228 seconds.
+  path: Assets/Tokkari/Prefabs/seal_2D (ver. 1).prefab
+  artifactKey: Guid(d372e7db0183d45099b6a8fcecb8b116) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tokkari/Prefabs/seal_2D (ver. 1).prefab using Guid(d372e7db0183d45099b6a8fcecb8b116) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+ -> (artifact id: '516dea7cdc98571387a8cf3e2e7733e3') in 0.014327 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 8.109597 seconds.
+  path: Assets/Tokkari/Prefabs/seal_2D (ver. 1).prefab
+  artifactKey: Guid(d372e7db0183d45099b6a8fcecb8b116) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tokkari/Prefabs/seal_2D (ver. 1).prefab using Guid(d372e7db0183d45099b6a8fcecb8b116) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+ -> (artifact id: '516dea7cdc98571387a8cf3e2e7733e3') in 0.000940 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 154.712866 seconds.
+  path: Assets/Tokkari/Prefabs/seal_2D (ver. 1).prefab
+  artifactKey: Guid(d372e7db0183d45099b6a8fcecb8b116) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tokkari/Prefabs/seal_2D (ver. 1).prefab using Guid(d372e7db0183d45099b6a8fcecb8b116) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+ -> (artifact id: '516dea7cdc98571387a8cf3e2e7733e3') in 0.000420 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 12.901743 seconds.
+  path: Assets/Tokkari/Prefabs/seal_2D (ver. 1).prefab
+  artifactKey: Guid(d372e7db0183d45099b6a8fcecb8b116) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tokkari/Prefabs/seal_2D (ver. 1).prefab using Guid(d372e7db0183d45099b6a8fcecb8b116) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+ -> (artifact id: '516dea7cdc98571387a8cf3e2e7733e3') in 0.000363 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 129.196226 seconds.
+  path: Assets/Tokkari/Prefabs/seal_2D (ver. 1).prefab
+  artifactKey: Guid(d372e7db0183d45099b6a8fcecb8b116) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tokkari/Prefabs/seal_2D (ver. 1).prefab using Guid(d372e7db0183d45099b6a8fcecb8b116) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+ -> (artifact id: '516dea7cdc98571387a8cf3e2e7733e3') in 0.000351 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 8.934313 seconds.
+  path: Assets/Tokkari/Prefabs/seal_2D (ver. 1).prefab
+  artifactKey: Guid(d372e7db0183d45099b6a8fcecb8b116) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tokkari/Prefabs/seal_2D (ver. 1).prefab using Guid(d372e7db0183d45099b6a8fcecb8b116) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+ -> (artifact id: '516dea7cdc98571387a8cf3e2e7733e3') in 0.000278 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 3.759084 seconds.
+  path: Assets/Tokkari/Prefabs/seal_2D (ver. 1).prefab
+  artifactKey: Guid(d372e7db0183d45099b6a8fcecb8b116) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tokkari/Prefabs/seal_2D (ver. 1).prefab using Guid(d372e7db0183d45099b6a8fcecb8b116) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+ -> (artifact id: '516dea7cdc98571387a8cf3e2e7733e3') in 0.000269 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 100.373100 seconds.
+  path: Assets/Tokkari/Prefabs/seal_2D (ver. 1).prefab
+  artifactKey: Guid(d372e7db0183d45099b6a8fcecb8b116) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tokkari/Prefabs/seal_2D (ver. 1).prefab using Guid(d372e7db0183d45099b6a8fcecb8b116) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+ -> (artifact id: '516dea7cdc98571387a8cf3e2e7733e3') in 0.000277 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 44.975377 seconds.
+  path: Assets/Tokkari/Prefabs/seal_2D (ver. 1).prefab
+  artifactKey: Guid(d372e7db0183d45099b6a8fcecb8b116) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tokkari/Prefabs/seal_2D (ver. 1).prefab using Guid(d372e7db0183d45099b6a8fcecb8b116) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+ -> (artifact id: '516dea7cdc98571387a8cf3e2e7733e3') in 0.000258 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 75.412314 seconds.
+  path: Assets/Tokkari/Prefabs/seal_2D (ver. 1).prefab
+  artifactKey: Guid(d372e7db0183d45099b6a8fcecb8b116) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tokkari/Prefabs/seal_2D (ver. 1).prefab using Guid(d372e7db0183d45099b6a8fcecb8b116) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+ -> (artifact id: '516dea7cdc98571387a8cf3e2e7733e3') in 0.000614 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 16.761462 seconds.
+  path: Assets/Tokkari/Prefabs/seal_2D (ver. 1).prefab
+  artifactKey: Guid(d372e7db0183d45099b6a8fcecb8b116) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tokkari/Prefabs/seal_2D (ver. 1).prefab using Guid(d372e7db0183d45099b6a8fcecb8b116) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+ -> (artifact id: '516dea7cdc98571387a8cf3e2e7733e3') in 0.000536 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
