@@ -14,7 +14,7 @@ public class PipeSpawner : MonoBehaviour
         SpawnBerg();
     }
 
-    private void Update()
+    void Update()
     {
         if(timer > timeDelay) 
         {
@@ -25,7 +25,7 @@ public class PipeSpawner : MonoBehaviour
         timer += Time.deltaTime;
     }
 
-    private void SpawnBerg()
+    void SpawnBerg()
     {
         Vector3 spawn = transform.position + new Vector3(0, Random.Range(-heightRange, heightRange));
         GameObject newIceberg = Instantiate(iceberg, spawn, Quaternion.identity);
