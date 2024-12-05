@@ -362,7 +362,7 @@
 "Assets/Tokkari/Code/Game Scene/PipeMover.cs"
 "Assets/Tokkari/Code/Game Scene/PipeSpawner.cs"
 "Assets/Tokkari/Code/Game Scene/SealController2D.cs"
-"Assets/Tokkari/Code/Glide.cs"
+"Assets/Tokkari/Code/Game Scene/SealFlicker.cs"
 "Assets/Tokkari/Code/Main Menu/MainMenu.cs"
 "Assets/Tokkari/Code/Main Menu/MouseHover.cs"
 "Assets/Tokkari/Code/PauseMenu.cs"

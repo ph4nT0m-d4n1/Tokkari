@@ -15,6 +15,8 @@ public class SealController2D : MonoBehaviour
 
     public PauseMenu PM; //for game pausing
 
+    public SealFlicker SF;
+
     void Start()
     {
         // microphone setup
@@ -74,6 +76,11 @@ public class SealController2D : MonoBehaviour
         
         Debug.Log(normalizedLoudness);
         sealRigidbody.AddForce(upwardForce, ForceMode2D.Force);
+    }
+
+    void OnCollisionEnter2D (Collision2D collision2D)
+    {
+        SF.isFlickering = true;
     }
 
     void UpdateMicFeedbackUI()
