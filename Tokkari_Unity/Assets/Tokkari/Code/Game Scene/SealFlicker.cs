@@ -7,10 +7,9 @@ public class SealFlicker : MonoBehaviour
     private SpriteRenderer sealSprite;
     private BoxCollider2D sealCollider;
     public float flickerDuration = 3f;
-    public float flickerInterval = 0.1f;
-
-    public float flickerTimer = 0f;
+    public float flickerInterval = 0.3f;
     public float elapsedTime = 0f;
+
     public bool isFlickering = false;
     void Start()
     {
@@ -22,34 +21,28 @@ public class SealFlicker : MonoBehaviour
     {
         if (isFlickering == true)
         {
-            elapsedTime += Time.time;
-            flickerTimer += Time.time;
-
-            if (flickerTimer >= flickerInterval)
-            {
-                sealSprite.enabled = !sealSprite.enabled; // Toggle visibility
-                flickerTimer = 0f; // Reset flicker timer
-                sealCollider.enabled = false;
-            }
-
-            if (elapsedTime >= flickerDuration)
-            {
-                StopFlicker(); // Stop flickering after duration
-            }
+            StartFlicker();
         }
     }
 
-    public void StartFlicker()
+    void StartFlicker()
     {
-        isFlickering = true;
-        elapsedTime = 0f;
-        flickerTimer = 0f;
+        elapsedTime += Time.deltaTime;
+
+        if (elapsedTime < flickerDuration)
+        {
+            sealSprite.enabled = !sealSprite.enabled;
+            sealCollider.enabled = false;
+        }
+        else if (elapsedTime >= flickerDuration)
+        {
+            StopFlicker();
+        }
     }
 
-    private void StopFlicker()
+    void StopFlicker ()
     {
-        isFlickering = false;
-        sealSprite.enabled = true; // Ensure sprite is visible
+        sealSprite.enabled = true;
         sealCollider.enabled = true;
     }
 }

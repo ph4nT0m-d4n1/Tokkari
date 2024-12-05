@@ -78,9 +78,12 @@ public class SealController2D : MonoBehaviour
         sealRigidbody.AddForce(upwardForce, ForceMode2D.Force);
     }
 
-    void OnCollisionEnter2D (Collision2D collision2D)
+    void OnCollisionEnter2D (Collision2D obstacle)
     {
-        SF.isFlickering = true;
+        if (obstacle.gameObject.tag == "Obstacle")
+        {
+            SF.isFlickering = true;
+        }
     }
 
     void UpdateMicFeedbackUI()

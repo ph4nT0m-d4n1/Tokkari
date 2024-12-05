@@ -765,7 +765,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   flickerDuration: 3
   flickerInterval: 0.1
-  flickerTimer: 0
   elapsedTime: 0
   isFlickering: 0
 --- !u!1 &643936420
@@ -2292,7 +2291,7 @@ PrefabInstance:
       objectReference: {fileID: 519239749}
     - target: {fileID: 950375694518313443, guid: 01e46f1e01b8b40bd8adc7913ea0b161, type: 3}
       propertyPath: loudness
-      value: 2.5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 950375694518313443, guid: 01e46f1e01b8b40bd8adc7913ea0b161, type: 3}
       propertyPath: micSlider
