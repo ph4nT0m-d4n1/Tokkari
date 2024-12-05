@@ -359,14 +359,14 @@
 -analyzer:"/Applications/Unity/Hub/Editor/2022.3.50f1/Unity.app/Contents/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"/Applications/Unity/Hub/Editor/2022.3.50f1/Unity.app/Contents/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 "Assets/Tokkari/3D Scene/3D_Test/SealController3D.cs"
+"Assets/Tokkari/Code/Game Scene/PipeMover.cs"
+"Assets/Tokkari/Code/Game Scene/PipeSpawner.cs"
 "Assets/Tokkari/Code/Game Scene/SealController2D.cs"
 "Assets/Tokkari/Code/Glide.cs"
 "Assets/Tokkari/Code/Main Menu/MainMenu.cs"
 "Assets/Tokkari/Code/Main Menu/MouseHover.cs"
 "Assets/Tokkari/Code/PauseMenu.cs"
 "Assets/Tokkari/Code/PauseMouseHover.cs"
-"Assets/Tokkari/Code/PipeMover.cs"
-"Assets/Tokkari/Code/PipeSpawner.cs"
 -langversion:9.0
 /deterministic
 /optimize+
