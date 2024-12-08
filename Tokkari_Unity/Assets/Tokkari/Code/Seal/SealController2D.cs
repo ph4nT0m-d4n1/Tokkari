@@ -4,7 +4,7 @@ public class SealController2D : MonoBehaviour
 {
     private AudioClip micClip;
     public float micSensitivity = 100.0f;
-    public float loudness = 1.0f;
+    public float loudness = 2.5f;
     
     public float jumpForce = 12.5f;
     public float maxLoudness = 5.0f;
@@ -13,11 +13,11 @@ public class SealController2D : MonoBehaviour
 
     public Slider micSlider; //for mic feedback
 
-    public PauseMenu PM; //for game pausing
+    public PauseMenu PM; //for game pausing logic
 
-    public SealFlicker SF;
+    public GameScore GS; //for score logic
 
-    public GameScore GS;
+    public EndMenu EM; //for game ending logic
 
     void Start()
     {
@@ -36,12 +36,12 @@ public class SealController2D : MonoBehaviour
 
    void Update()
    {
-        if (!PM.isPaused)
+        if (!PM.isPaused && !EM.isGameOver)
         {
             loudness = GetLoudnessFromMic();
             UpdateMicFeedbackUI();
         }
-        else
+        else //if the game is paused, no sound feedbac is relayed, and the UI is updated
         {
             loudness = 0;
             UpdateMicFeedbackUI();
@@ -72,18 +72,19 @@ public class SealController2D : MonoBehaviour
 
     void ApplySealMovement()
     {
-        float normalizedLoudness = Mathf.Clamp01(loudness / maxLoudness);
+        float normalizedLoudness = Mathf.Clamp01(loudness / maxLoudness); //normalizes the loudness to a value between 0 and 1
         Vector2 upwardForce = new Vector2(0, normalizedLoudness * jumpForce);
         
-        Debug.Log(normalizedLoudness);
-        sealRigidbody.AddForce(upwardForce, ForceMode2D.Force);
+        // Debug.Log(normalizedLoudness); //for testing
+
+        sealRigidbody.AddForce(upwardForce, ForceMode2D.Force); //using the seal's mass to move it up based on the upward force
     }
 
     void OnCollisionEnter2D (Collision2D obstacle)
     {
         if (obstacle.gameObject.tag == "Obstacle")
         {
-            SF.isFlickering = true;
+            EM.GameOver(); //game ends if the seal hits an obstacle
         }
     }
 
@@ -91,7 +92,7 @@ public class SealController2D : MonoBehaviour
     {
         if (collider.gameObject.tag == "Pass")
         {
-           GS.score += 1;
+           GS.score += 1; //score is increased if the seal passes through the colliders in
         }
     }
 

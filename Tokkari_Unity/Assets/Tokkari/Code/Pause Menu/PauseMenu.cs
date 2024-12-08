@@ -16,6 +16,7 @@ public class PauseMenu : MonoBehaviour
 
     void Start () 
     {
+        //adding button event listeners
         pauseButton.onClick.AddListener(PauseGame);
         resumeButton.onClick.AddListener(ResumeGame);
         menuButton.onClick.AddListener(SendToMenu);
@@ -23,7 +24,7 @@ public class PauseMenu : MonoBehaviour
 
         menuOverlay.SetActive(false);
 
-        isPaused = false;
+        isPaused = false; //game is not paused upon start
     }
 
 	void PauseGame()
@@ -33,7 +34,7 @@ public class PauseMenu : MonoBehaviour
         if (isPaused == true)
         {
             menuOverlay.SetActive(true);
-		    Time.timeScale = 0;
+		    Time.timeScale = 0; //stopping all game physics when the game is paused
         }  
 	}
 
@@ -44,17 +45,17 @@ public class PauseMenu : MonoBehaviour
         if (isPaused == false)
         {
             menuOverlay.SetActive(false);
-		    Time.timeScale = 1;
+		    Time.timeScale = 1; //setting the timescale back to normal
         }  
     }
 
     void SendToMenu()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(0); //in build settings, the menu is the 1st scene, i.e. scene 0
     }
 
     void ExitGame()
     {
-        Application.Quit();
+        Application.Quit(); //exits the application
     }
 }

@@ -11,18 +11,19 @@ public class MainMenu : MonoBehaviour
 
     void Start () 
     {
+        //adding event listeners to buttons
         playButton.onClick.AddListener(PlayGame);
         exitButton.onClick.AddListener(QuitGame);
     }
 
 	void PlayGame()
     {
-		SceneManager.LoadScene(1);
+		SceneManager.LoadScene(1); //game scene is set as the 2nd scene, i.e. scene1
 	}
 
     void QuitGame ()
     {
-        Application.Quit();
+        Application.Quit(); //exits the application
     }
 }
 

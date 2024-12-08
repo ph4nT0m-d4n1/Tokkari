@@ -25,7 +25,6 @@ public class PauseMouseHover : MonoBehaviour, IPointerEnterHandler, IPointerExit
         {
             buttonBG.color = Color.red;
         }
-
     }
 
     public void OnPointerExit(PointerEventData pointerEventData)

@@ -4,13 +4,10 @@ using UnityEngine;
 
 public class BergSpawner : MonoBehaviour
 {
-
     public float timeDelay = 3.0f; //delay in-between iceberg spawns
     public GameObject iceberg; //object to be spawned   
     public float heightRange = 0.45f; //difference in Y value for iceberg pair
     public float destroyTimer = 22f; //destroy after this many seconds
-
-    public List<GameObject> iceBergs = new List<GameObject>(); //new string list for the iceBergs
 
     private float timer;
     void Start()
@@ -20,7 +17,7 @@ public class BergSpawner : MonoBehaviour
 
     void Update()
     {
-        if(timer > timeDelay) //if timer exceeds delay then spawn
+        if(timer > timeDelay) //if timer exceeds the delay, then spawnBerg is called
         {
             SpawnBerg();
             timer = 0;
@@ -37,7 +34,6 @@ public class BergSpawner : MonoBehaviour
         
         //instantiate the object (iceberg)
         GameObject newIceberg = Instantiate(iceberg, spawnPos, Quaternion.identity);
-        iceBergs.Add(newIceberg);
 
         //destroy object after set amount of time
         Destroy(newIceberg, destroyTimer);

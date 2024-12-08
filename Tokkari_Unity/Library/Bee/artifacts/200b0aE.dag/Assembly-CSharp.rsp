@@ -361,14 +361,14 @@
 "Assets/Tokkari/3D/3D_Test/SealController3D.cs"
 "Assets/Tokkari/Code/BergPillars/BergMover.cs"
 "Assets/Tokkari/Code/BergPillars/BergSpawner.cs"
-"Assets/Tokkari/Code/BergPillars/OnBergCollision.cs"
+"Assets/Tokkari/Code/End Menu/EndMenu.cs"
+"Assets/Tokkari/Code/End Menu/EndMenuHover.cs"
 "Assets/Tokkari/Code/Main Menu/MainMenu.cs"
 "Assets/Tokkari/Code/Main Menu/MouseHover.cs"
 "Assets/Tokkari/Code/Pause Menu/PauseMenu.cs"
 "Assets/Tokkari/Code/Pause Menu/PauseMouseHover.cs"
 "Assets/Tokkari/Code/Seal/GameScore.cs"
 "Assets/Tokkari/Code/Seal/SealController2D.cs"
-"Assets/Tokkari/Code/Seal/SealFlicker.cs"
 -langversion:9.0
 /deterministic
 /optimize+
