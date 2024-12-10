@@ -10,6 +10,7 @@ public class EndMenu : MonoBehaviour
     public Button returnToMenuButton;
     public GameObject endScreenOverlay;
 
+    //boolean to track game status, updates when seal collides w/ icebergs
     public bool isGameOver;
     void Start()
     {

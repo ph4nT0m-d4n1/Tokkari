@@ -4,6 +4,7 @@ using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
+//This class defines the main menu of the game, through the use of two buttons and scene manager. 
 public class MainMenu : MonoBehaviour
 {
     public Button playButton;
@@ -23,7 +24,7 @@ public class MainMenu : MonoBehaviour
 
     void QuitGame ()
     {
-        Application.Quit(); //exits the application
+        Application.Quit(); //exits the application does nothing until game is built
     }
 }
 

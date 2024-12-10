@@ -11,8 +11,10 @@ public class MouseHover : MonoBehaviour, IPointerEnterHandler, IPointerExitHandl
         buttonBG.color = Color.white; 
     }
 
+    //Check if pointer enters either button
     public void OnPointerEnter(PointerEventData pointerEventData)
     {
+        //change color to correspond to cursor
         if (gameObject.name == "playButton")
         {
             buttonBG.color = Color.green;
@@ -24,6 +26,7 @@ public class MouseHover : MonoBehaviour, IPointerEnterHandler, IPointerExitHandl
 
     }
 
+    //account for when cursor leaves
     public void OnPointerExit(PointerEventData pointerEventData)
     {
 	    buttonBG.color = Color.white;

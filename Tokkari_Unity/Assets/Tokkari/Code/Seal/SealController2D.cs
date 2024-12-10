@@ -55,12 +55,18 @@ public class SealController2D : MonoBehaviour
 
     float GetLoudnessFromMic()
     {
+        //size of audio sample
         int sampleSize = 128;
+        //array to store data samples
         float[] data = new float[sampleSize];
+        //get the current position of the microphone in audio buffer, account for samplesize to get starting position.
         int micPosition = Microphone.GetPosition(Microphone.devices[0]) - sampleSize + 1;
+        //ensure loudness is within bounds
         if (micPosition < 0) return 0;
+        //Retrieve audio clip starting at micposition 
         micClip.GetData(data, micPosition);
 
+        //initialize "Root Mean Square", logic obtained from class sound script
         float rms = 0;
         for (int i = 0; i < sampleSize; i++)
         {
@@ -101,6 +107,7 @@ public class SealController2D : MonoBehaviour
     {
         if (micSlider != null)
         {
+            //Ensures value is within bounds of the slider (0-1)
             micSlider.value = Mathf.Clamp01(loudness / micSensitivity);
         }
     }

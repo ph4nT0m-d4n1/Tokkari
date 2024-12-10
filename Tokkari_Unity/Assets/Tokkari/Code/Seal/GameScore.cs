@@ -8,6 +8,7 @@ using UnityEngine.SocialPlatforms.Impl;
 
 public class GameScore : MonoBehaviour
 {
+    //integer to store score value
     public int score;
     public TextMeshProUGUI scoreText;
 
