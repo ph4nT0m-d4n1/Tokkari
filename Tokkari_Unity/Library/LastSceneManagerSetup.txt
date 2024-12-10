@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Tokkari/Scenes/Final_Game.unity
+- path: Assets/Tokkari/Scenes/Main_Menu.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
