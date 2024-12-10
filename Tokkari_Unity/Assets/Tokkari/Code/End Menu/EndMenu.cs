@@ -28,20 +28,20 @@ public class EndMenu : MonoBehaviour
 
         if (isGameOver == true)
         {
-            endScreenOverlay.SetActive(true); //
+            endScreenOverlay.SetActive(true);
 		    Time.timeScale = 0;
         }  
     }
 
     void PlayAgain()
     {
-        SceneManager.LoadScene(1); //game scene is set as the 2nd scene, i.e. scene1
         Time.timeScale = 1;
+        SceneManager.LoadScene(1); //game scene is set as the 2nd scene, i.e. scene1
     }
 
     void ReturnToMenu()
     {
-        SceneManager.LoadScene(0); //menu scene is 1st scene, i.e. scene0
         Time.timeScale = 1;
+        SceneManager.LoadScene(0); //menu scene is 1st scene, i.e. scene0
     }
 }

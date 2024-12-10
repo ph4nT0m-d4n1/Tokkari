@@ -4,6 +4,7 @@ using System.Threading;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SocialPlatforms.Impl;
 
 public class GameScore : MonoBehaviour
 {
@@ -15,8 +16,8 @@ public class GameScore : MonoBehaviour
         score = 0; //score is at 0 when the game starts
     }
 
-    void UpdateScore() //this is called when the seal passes in between the pillars
+    public void UpdateScore() //this is called when the seal passes in between the pillars
     {
-        scoreText.text = "Score: " + score.ToString();
+        scoreText.text = score.ToString();
     }
 }

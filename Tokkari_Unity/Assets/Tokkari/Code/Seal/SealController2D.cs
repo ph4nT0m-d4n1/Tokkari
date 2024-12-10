@@ -93,6 +93,7 @@ public class SealController2D : MonoBehaviour
         if (collider.gameObject.tag == "Pass")
         {
            GS.score += 1; //score is increased if the seal passes through the colliders in
+           GS.UpdateScore(); //scoreText is updated
         }
     }
 

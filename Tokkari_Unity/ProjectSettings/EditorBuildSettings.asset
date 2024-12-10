@@ -8,7 +8,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Tokkari/Scenes/Main_Menu.unity
     guid: a701efbd998d04deeae61fdfaf01eb46
-  - enabled: 1
-    path: Assets/Tokkari/Scenes/Game.unity
+  - enabled: 0
+    path: Assets/Tokkari/3D & 2D Test/TEST_VER.unity
     guid: 2ed08a85e8ce742a89a40452d16b03d2
+  - enabled: 1
+    path: Assets/Tokkari/Scenes/Final_Game.unity
+    guid: 9cc303860e3c841a6894931edcaf5230
   m_configObjects: {}
