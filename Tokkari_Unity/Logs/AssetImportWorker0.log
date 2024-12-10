@@ -29,7 +29,7 @@ AssetImportWorker0
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-49840
+49962
 Successfully changed project path to: /Users/danny/cproj/unity/imdm227/Tokkari/Tokkari_Unity
 /Users/danny/cproj/unity/imdm227/Tokkari/Tokkari_Unity
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -65,12 +65,12 @@ Successfully changed project path to: /Users/danny/cproj/unity/imdm227/Tokkari/T
     "memorysetup-temp-allocator-size-gfx=262144"
 Player connection [8275851328]  Target information:
 
-Player connection [8275851328]  * "[IP] 10.104.195.101 [Port] 0 [Flags] 2 [Guid] 1600558649 [EditorId] 1600558649 [Version] 1048832 [Id] OSXEditor(0,wireless-10-104-195-101.umd.edu) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" 
+Player connection [8275851328]  * "[IP] 10.104.195.101 [Port] 0 [Flags] 2 [Guid] 1395757579 [EditorId] 1395757579 [Version] 1048832 [Id] OSXEditor(0,wireless-10-104-195-101.umd.edu) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" 
 
 Player connection [8275851328] Host joined multi-casting on [225.0.0.222:54997]...
 Player connection [8275851328] Host joined alternative multi-casting on [225.0.0.222:34997]...
 [PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
-Refreshing native plugins compatible for Editor in 14.05 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 6.49 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.50f1 (c3db7f8bf9b1)
 [Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2022.3.50f1/Unity.app/Contents/Resources/UnitySubsystems
@@ -85,15 +85,15 @@ Initialize mono
 Mono path[0] = '/Applications/Unity/Hub/Editor/2022.3.50f1/Unity.app/Contents/Managed'
 Mono path[1] = '/Applications/Unity/Hub/Editor/2022.3.50f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit-macos'
 Mono config path = '/Applications/Unity/Hub/Editor/2022.3.50f1/Unity.app/Contents/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56136
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56330
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: /Applications/Unity/Hub/Editor/2022.3.50f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
 Register platform support module: /Applications/Unity/Hub/Editor/2022.3.50f1/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
-Registered in 0.003589 seconds.
-- Loaded All Assemblies, in  0.297 seconds
+Registered in 0.001304 seconds.
+- Loaded All Assemblies, in  0.258 seconds
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 94 ms
+Android Extension - Scanning For ADB Devices 93 ms
 Native extension for OSXStandalone target not found
 Diagnostic switches are active and may impact performance or degrade your user experience. Switches can be configured through the Diagnostics section in the Preferences window.
 	GlobalIlluminationLogging: False
@@ -101,35 +101,35 @@ Diagnostic switches are active and may impact performance or degrade your user e
 	UndoRetainStack: False
 	UndoSerializeStack: False
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.336 seconds
-Domain Reload Profiling: 633ms
-	BeginReloadAssembly (84ms)
+- Finished resetting the current domain, in  0.319 seconds
+Domain Reload Profiling: 577ms
+	BeginReloadAssembly (60ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (30ms)
+		CreateAndSetChildDomain (0ms)
+	RebuildCommonClasses (29ms)
 	RebuildNativeTypeToScriptingClass (10ms)
-	initialDomainReloadingComplete (43ms)
-	LoadAllAssembliesAndSetupDomain (130ms)
-		LoadAssemblies (84ms)
+	initialDomainReloadingComplete (36ms)
+	LoadAllAssembliesAndSetupDomain (123ms)
+		LoadAssemblies (60ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (128ms)
-			TypeCache.Refresh (127ms)
-				TypeCache.ScanAssembly (115ms)
+		AnalyzeDomain (122ms)
+			TypeCache.Refresh (121ms)
+				TypeCache.ScanAssembly (109ms)
 			ScanForSourceGeneratedMonoScriptInfo (0ms)
 			ResolveRequiredComponents (0ms)
-	FinalizeReload (336ms)
+	FinalizeReload (319ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (297ms)
+		SetupLoadedEditorAssemblies (282ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (173ms)
-			SetLoadedEditorAssemblies (4ms)
+			InitializePlatformSupportModulesInManaged (163ms)
+			SetLoadedEditorAssemblies (3ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (1ms)
-			ProcessInitializeOnLoadAttributes (87ms)
+			BeforeProcessingInitializeOnLoad (2ms)
+			ProcessInitializeOnLoadAttributes (82ms)
 			ProcessInitializeOnLoadMethodAttributes (32ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
@@ -139,7 +139,7 @@ Domain Reload Profiling: 633ms
 Worker process is ready to serve import requests
 Caller must complete domain reload
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.492 seconds
+- Loaded All Assemblies, in  0.455 seconds
 Native extension for Android target not found
 Native extension for OSXStandalone target not found
 Package Manager log level set to [2]
@@ -152,35 +152,35 @@ Diagnostic switches are active and may impact performance or degrade your user e
 	UndoRetainStack: False
 	UndoSerializeStack: False
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.577 seconds
-Domain Reload Profiling: 1069ms
-	BeginReloadAssembly (94ms)
+- Finished resetting the current domain, in  0.570 seconds
+Domain Reload Profiling: 1026ms
+	BeginReloadAssembly (96ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (4ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (21ms)
+		CreateAndSetChildDomain (20ms)
 	RebuildCommonClasses (29ms)
 	RebuildNativeTypeToScriptingClass (10ms)
-	initialDomainReloadingComplete (29ms)
-	LoadAllAssembliesAndSetupDomain (330ms)
-		LoadAssemblies (209ms)
+	initialDomainReloadingComplete (28ms)
+	LoadAllAssembliesAndSetupDomain (292ms)
+		LoadAssemblies (177ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (161ms)
-			TypeCache.Refresh (146ms)
-				TypeCache.ScanAssembly (129ms)
+		AnalyzeDomain (158ms)
+			TypeCache.Refresh (143ms)
+				TypeCache.ScanAssembly (127ms)
 			ScanForSourceGeneratedMonoScriptInfo (10ms)
 			ResolveRequiredComponents (4ms)
-	FinalizeReload (577ms)
+	FinalizeReload (570ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (449ms)
+		SetupLoadedEditorAssemblies (444ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (9ms)
+			InitializePlatformSupportModulesInManaged (10ms)
 			SetLoadedEditorAssemblies (3ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (41ms)
-			ProcessInitializeOnLoadAttributes (381ms)
+			BeforeProcessingInitializeOnLoad (38ms)
+			ProcessInitializeOnLoadAttributes (379ms)
 			ProcessInitializeOnLoadMethodAttributes (14ms)
 			AfterProcessingInitializeOnLoad (1ms)
 			EditorAssembliesLoaded (0ms)
@@ -188,12 +188,12 @@ Domain Reload Profiling: 1069ms
 		AwakeInstancesAfterBackupRestoration (3ms)
 Launching external process: /Applications/Unity/Hub/Editor/2022.3.50f1/Unity.app/Contents/Tools/UnityShaderCompiler
 Launched and connected shader compiler UnityShaderCompiler after 0.04 seconds
-Refreshing native plugins compatible for Editor in 1.20 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 1.10 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3305 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 19 unused Assets / (49.5 KB). Loaded Objects now: 3790.
-Memory consumption went from 152.1 MB to 152.1 MB.
-Total: 3.359291 ms (FindLiveObjects: 0.142500 ms CreateObjectMapping: 0.059750 ms MarkObjects: 3.082167 ms  DeleteObjects: 0.074334 ms)
+Memory consumption went from 152.1 MB to 152.0 MB.
+Total: 3.828125 ms (FindLiveObjects: 0.131459 ms CreateObjectMapping: 0.069666 ms MarkObjects: 3.514542 ms  DeleteObjects: 0.112125 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
@@ -208,127 +208,3 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 5476.688559 seconds.
-  path: Assets/Tokkari/Textures/pause-button.png
-  artifactKey: Guid(942f6bb6e4e7b4c4782881c9a1b00794) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tokkari/Textures/pause-button.png using Guid(942f6bb6e4e7b4c4782881c9a1b00794) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
- -> (artifact id: '9c7e37980824ba764d5f52d208251564') in 0.064774 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 126.476587 seconds.
-  path: Assets/Tokkari/Fonts/Font Assets/Jaro-Regular-VariableFont_opsz SDF.asset
-  artifactKey: Guid(6840a6c45125649b5964ffa3decb6a80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tokkari/Fonts/Font Assets/Jaro-Regular-VariableFont_opsz SDF.asset using Guid(6840a6c45125649b5964ffa3decb6a80) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
- -> (artifact id: 'd7cd5371d2bb2fa7cc20bb02176bf0c9') in 0.121430 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 6
-========================================================================
-Received Import Request.
-  Time since last request: 173.547636 seconds.
-  path: Assets/Tokkari/Fonts/Font Assets/RampartOne-Regular SDF.asset
-  artifactKey: Guid(552ea4e3ce0a34951b008eda57ceb1b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tokkari/Fonts/Font Assets/RampartOne-Regular SDF.asset using Guid(552ea4e3ce0a34951b008eda57ceb1b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
- -> (artifact id: '5ab6cb43e8b69efa09415772983efa85') in 0.013073 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 6
-========================================================================
-Received Import Request.
-  Time since last request: 418.487755 seconds.
-  path: Assets/Tokkari/Fonts/Font Assets/Jaro-Regular-VariableFont_opsz SDF.asset
-  artifactKey: Guid(6840a6c45125649b5964ffa3decb6a80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tokkari/Fonts/Font Assets/Jaro-Regular-VariableFont_opsz SDF.asset using Guid(6840a6c45125649b5964ffa3decb6a80) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
- -> (artifact id: '554cc2e8d70f48ab1fbbfaaf967acefd') in 0.017833 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 6
-========================================================================
-Received Prepare
-Caller must complete domain reload
-Begin MonoManager ReloadAssembly
-Thread 0x31acc7000 may have been prematurely finalized
-- Loaded All Assemblies, in  0.305 seconds
-Native extension for Android target not found
-Native extension for OSXStandalone target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Diagnostic switches are active and may impact performance or degrade your user experience. Switches can be configured through the Diagnostics section in the Preferences window.
-	GlobalIlluminationLogging: False
-	PreventClearGICacheOnKatana: False
-	UndoRetainStack: False
-	UndoSerializeStack: False
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.950 seconds
-Domain Reload Profiling: 1255ms
-	BeginReloadAssembly (100ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (3ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (36ms)
-	RebuildCommonClasses (29ms)
-	RebuildNativeTypeToScriptingClass (10ms)
-	initialDomainReloadingComplete (17ms)
-	LoadAllAssembliesAndSetupDomain (149ms)
-		LoadAssemblies (171ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (13ms)
-			TypeCache.Refresh (7ms)
-				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (5ms)
-	FinalizeReload (950ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (426ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (10ms)
-			SetLoadedEditorAssemblies (3ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (39ms)
-			ProcessInitializeOnLoadAttributes (360ms)
-			ProcessInitializeOnLoadMethodAttributes (14ms)
-			AfterProcessingInitializeOnLoad (1ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (3ms)
-Refreshing native plugins compatible for Editor in 1.30 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3276 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 14 unused Assets / (28.5 KB). Loaded Objects now: 3838.
-Memory consumption went from 157.8 MB to 157.8 MB.
-Total: 3.440667 ms (FindLiveObjects: 0.151167 ms CreateObjectMapping: 0.063666 ms MarkObjects: 3.189625 ms  DeleteObjects: 0.035875 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 84.752754 seconds.
-  path: Assets/Tokkari/Scenes/Final_Game.unity
-  artifactKey: Guid(9cc303860e3c841a6894931edcaf5230) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tokkari/Scenes/Final_Game.unity using Guid(9cc303860e3c841a6894931edcaf5230) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
- -> (artifact id: '7108d055b6abfa554f7e07ec0dcfd20f') in 0.003466 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0

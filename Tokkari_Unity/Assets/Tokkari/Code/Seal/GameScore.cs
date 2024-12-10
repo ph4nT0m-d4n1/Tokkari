@@ -18,6 +18,6 @@ public class GameScore : MonoBehaviour
 
     public void UpdateScore() //this is called when the seal passes in between the pillars
     {
-        scoreText.text = score.ToString();
+        scoreText.text = "Score" + score.ToString();
     }
 }
